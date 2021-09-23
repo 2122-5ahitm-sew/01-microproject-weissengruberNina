@@ -1,0 +1,26 @@
+@startuml
+class Car{
+-id: int
+-name: String
+-preis: double
+}
+
+class Customer{
+-id: int
+-name: String
+-dateOfBirth: LocalDate
+}
+
+class Renatal{
+-car: Auto
+-customer: Kunde
+-startDatum: LocalDate
+-endDatum: LocalDate
+-discount: double
+}
+
+Car "1" <- "*" Renatal : is rented
+Renatal "*" -> "1" Customer : rents
+
+
+@enduml
