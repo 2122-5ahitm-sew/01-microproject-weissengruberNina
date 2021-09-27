@@ -1,7 +1,10 @@
 # Car Rental
 
 ## CLD
-image::images/cld.png[]
+[plantuml, cld, png, align=left]
+----
+include::plantuml/cld.puml[]
+----
 
 ## Gh-pages
 https://2122-5ahitm-sew.github.io/01-microproject-weissengruberNina/
