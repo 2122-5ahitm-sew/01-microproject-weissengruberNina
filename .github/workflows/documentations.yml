@@ -3,7 +3,7 @@ name: asciidoctor github pages
 on:
   push:
     branches:
-      - 'main'
+      - 'master'
 
 jobs:
   build:
