@@ -11,7 +11,7 @@ class Customer{
 -dateOfBirth: LocalDate
 }
 
-class Renatal{
+class Rental{
 -car: Auto
 -customer: Kunde
 -startDatum: LocalDate
@@ -19,8 +19,8 @@ class Renatal{
 -discount: double
 }
 
-Car "1" <- "*" Renatal : is rented
-Renatal "*" -> "1" Customer : rents
+Car "1" <- "*" Rental : is rented
+Rental "*" -> "1" Customer : rents
 
 
 @enduml
