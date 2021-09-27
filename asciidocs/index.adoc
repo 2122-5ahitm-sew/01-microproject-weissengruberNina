@@ -1,4 +1,4 @@
-# Car Renatl
+# Car Rental
 
 ## CLD
 image::images/cld.png[]
