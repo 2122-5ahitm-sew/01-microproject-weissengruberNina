@@ -1,0 +1,54 @@
+GET localhost:8080/rental/findAll
+
+###
+
+GET localhost:8080/rental/findRental/1
+
+###
+
+POST localhost:8080/rental/addRental
+Content-Type: application/json
+
+{
+  "id": 2,
+  "car": {
+    "id": 1,
+    "marke": "Opel",
+    "preis": 400
+  },
+  "customer": {
+    "id": 1,
+    "name": "Mario Mayr",
+    "dateOfBirth": "1999-05-11"
+  },
+  "startDate": "2020-9-9",
+  "endDate": "2020-9-16",
+  "discount": 0.0
+}
+
+###
+
+PUT localhost:8080/rental/2
+Content-Type: application/json
+
+{
+  "car": {
+    "id": 1,
+    "marke": "Tesla",
+    "preis": 400000
+  },
+  "customer": {
+    "id": 1,
+    "name": "Peter Mayr",
+    "dateOfBirth": "1999-05-11"
+  },
+  "startDate": "2020-9-9",
+  "endDate": "2020-11-20",
+  "discount": 10.0
+}
+
+###
+
+DELETE localhost:8080/rental/deleteRental/2
+
+###

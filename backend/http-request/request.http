@@ -1,0 +1,33 @@
+GET localhost:8080/car/findAll
+
+###
+
+GET localhost:8080/car/findCar/1
+
+###
+
+POST localhost:8080/car/addCar
+Content-Type: application/json
+
+{
+  "id": 2,
+  "marke": "Audi",
+  "preis": 560
+}
+
+###
+
+PUT localhost:8080/car/2
+Content-Type: application/json
+
+{
+  "id": 2,
+  "marke": "Tesla",
+  "preis": 5600
+}
+
+###
+
+DELETE localhost:8080/car/deleteCar/2
+
+###
